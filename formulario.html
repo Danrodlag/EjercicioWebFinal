@@ -12,6 +12,15 @@
         <link rel="stylesheet" type="text/css" href="styles/style.css">
         <!-- Css Secundario -->
         <link rel="stylesheet" type="text/css" href="styles/formstyle.css">
+
+        <script>
+            addEventListener("change", getvalue)
+
+            function getvalue(){
+                var value = document.getElementById("descargas").value;
+                document.getElementById("num").innerHTML = value;
+            }
+        </script>
     </head>
     <body>
 
@@ -81,6 +90,8 @@
                     <fieldset class="resto">
                         <label for="descargas"> DESCARGAS/MES: </label>
                         <input type="range" name="descargas" id="descargas" min="0" max="500" value="50" step="10">
+                        <span>Value: </span>
+                        <span id="num">50</span>
                     </fieldset>
 
                     <fieldset class="resto">
