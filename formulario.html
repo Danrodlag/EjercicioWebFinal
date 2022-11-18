@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+
+        <!-- Título web -->
+        <title>Formulario de suscripción</title>
+        <!-- Link, para poner el icono -->
+        <link rel="icon" type="image/x-icon" href="img/indice.ico">
+
+        <!-- Css principal-->
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+        <!-- Css Secundario -->
+        <link rel="stylesheet" type="text/css" href="styles/formstyle.css">
+    </head>
+    <body>
+
+        <!-- Barra de navegación -->
+        <nav>
+            
+            <a href="index.html">Inicio</a>
+            <a href="">Novedades</a>
+            <a href="top3.html">Top 3</a>
+            <a href="interpretes.html">Intérpetres</a>
+            <a href="">Ránking</a>
+            
+            <!-- Botón de suscripción -->
+            <button id="suscribete"><a href="formulario.html">¡Suscríbete!</a></button>
+        </nav>
+
+        <!--Vamos con el main -->
+        <main>
+            <!-- Título Principal -->
+            <h1>¡Música gratis durante 1 año!</h1>
+            <!-- Parrafo de descripción -->
+            <p>Te gustaría escuchar más música pero no quieres gastarte el dinero?
+                ¡Ya no tienes excusa! Gana un año de discos <b>GRATIS</b>
+                participando en nuestro sorteo. No esperes más, sólo tienes que 
+                contarnos algo de ti y suscribirte ;)
+            </p>
+
+            <!-- Cabecera del futuro temporizador -->
+            <h2>¡Corre! Se acaba el tiempo. Tic...tac...</h2>
+
+            <!-- Aquí irán los futuros temporizadores, vamos preparandolos para solo añadir el contenido después -->
+            <section class="cajatemps">
+                <article class="temporizadores">
+                </article>
+                <article class="temporizadores">
+                </article>
+            </section>
+
+            <!-- Aquí tendremos la caja del formulario con todo lo que incluye, y con un estilo en concreto -->
+            <section class="cajaform">
+
+                <!-- Ponemos título al formulario para que quede bonito -->
+                <h1 id="titform">Participa en el sorteo</h1>
+
+                <!-- El formulario en si y que va a hacer-->
+                <form method="post" action="mailto:atolon@fundacionsafa.es" enctype="text/plain">
+
+                    <!-- Voy a dividirlos en fieldsets  cada uno con su label e input concretos -->
+                    <!-- Los tres primeros tienen un css común, y los demás tienen otro para ellos -->
+                    <fieldset class="primeros">
+                        <label for="nombre"> NOMBRE: </label>
+                        <!-- Pattern sirve para limitar que se puede enviar con un input -->
+                        <input type="text" name="nombre" id="nombre" placeholder="Introduce tu nombre" maxlength="50" pattern="[A-Za-z]{1,50}" required>
+                    </fieldset>
+
+                    <fieldset class="primeros">
+                        <label for="email"> EMAIL: </label>
+                        <!-- Pattern también se usa con el email y se puede limitar según cada parte del mail -->
+                        <input type="text" name="email" id="email" placeholder="Introduce tu email" pattern="([a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-])*@([A-Za-z]{1,})*[.]([a-zA-Z]{2,4})" required>
+                    </fieldset>
+
+                    <fieldset class="primeros">
+                        <label for="Numerodispositivos"> Nº DISPOSITIVOS: </label>
+                        <input type="number" step="1" name="Numerodispositivos" id="Numerodispositivos" min="0" placeholder="0">
+                    </fieldset>
+
+                    <fieldset class="resto">
+                        <label for="descargas"> DESCARGAS/MES: </label>
+                        <input type="range" name="descargas" id="descargas" min="0" max="500" value="50" step="10">
+                    </fieldset>
+
+                    <fieldset class="resto">
+                        <label for="genero"> GÉNERO MUSICAL: </label>
+                        <select name="genero" id="genero">
+                            <option value="Clásica">Clásica</option>
+                            <option value="Jazz">Jazz</option>
+                            <option value="Rock">Rock</option>
+                            <option value="Pop">Pop</option>
+                        </select>
+                    </fieldset>
+                    
+                    <fieldset class="resto">
+                        <label for="fechanac"> FECHA NACIMIENTO: </label>
+                        <input type="date" name="fechanac" id="fechanac" required>
+                    </fieldset>
+
+                    <fieldset class="resto">
+                        <label for="color"> COLOR PREFERIDO: </label>
+                        <input type="color" name="color" id="color" value="#000000">
+                    </fieldset>
+
+                    <!-- La caja de privacidad tambien tiene una forma especial hasta de el orden del label -->
+                    <label id="priv" for="privacidad">
+                        <input type="checkbox" id="privacidad" name="privacidad" value="aceptada" required>
+                        *He leído y acepto la política de privacidad
+                    </label>
+
+                    <!-- Botón de enviar -->
+                    <input type="submit"> 
+                </form>
+            </section>
+        </main>
+
+        <!-- Enlaces de los avisos y políticas (He puesto anchors en href para que al pulsar, no suba en la web-->
+        <footer>
+            
+            <a href="#aviso legal">Aviso legal</a>
+            <a href="#política de privacidad">Política de privacidad</a>
+            <a href="#política de cookies">Política de cookies</a>
+       
+        </footer>
+    </body>
+</html>

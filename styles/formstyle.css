@@ -1,0 +1,132 @@
+/* Formulario de suscripción y sus propiedades */
+
+/* Particularidades de este párrafo */
+p{
+    text-align: justify;
+    max-width: 45%;
+    margin-left: 27%;
+}
+
+/* Particularidades de esta cabecera */
+h2{
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Caja donde se encontrarán los temporizadores, ahora vacíos y solo cuadrados rosa */
+.cajatemps{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 47%;
+}
+
+/* Cajas rosas donde añadiremos pocas cosas cuando le añadamos funcionalidad */
+.temporizadores{
+    padding: 10px;
+    border: 2px solid black;
+    box-shadow: 0 0 10px #c9c9c9;
+    border-radius: 7px;
+    background-color: #F81D44;
+    margin: 15px;
+}
+
+/* Caja general del formulario */
+.cajaform{
+    max-width: 60%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    border: 2px solid #000000;
+    margin-left: 20%;
+    margin-bottom: 1%;
+}
+
+/* Título del formulario */
+#titform{
+    max-width: 100%;
+    font-family: 'Montserrat Black';
+    text-align: center;
+    color: #333333;
+    font-size: 2rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Estilo primeros campos */
+.primeros{
+    align-self: center;
+    border-radius: 13px;
+    margin-bottom: 5px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 1px solid #c9c9c9;
+}
+
+/* Estilo de los siguientes campos */
+.resto{
+    align-self: center;
+    border: 1px solid #c9c9c9;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 5px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* Estilo de las etiquetas que tienen los input */
+label{
+    font-family: 'Raleway';
+    text-align: center;
+    color: #393939;
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+/* Estilo de los input en concreto, para que tengan un color personalizado de fondo y una separación con sus etiquetas */
+input{
+    background-color: lavender;
+    margin-left: 10px;
+    width: auto;
+    border: none;
+}
+
+/* Estilo de la lista desplegable */
+select{
+    margin-left: 10px;
+    background-color: lavender;
+}
+
+/* Estilo del color preferido para que tenga un ancho correcto */
+#color{
+    width: 100px;
+}
+
+/* Estilo checkbox de privacidad */
+#priv{
+    font-family: sans-serif;
+    color: gray;
+    font-size: .7rem;
+}
+
+/* Estilo del botón Enviar, con su propia transición */
+input[type=submit]{
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+    height: 60px;
+    background-color: #333333;
+    border-radius: 50px;
+    font-family: 'Montserrat Regular';
+    font-size: 1.3rem;
+    color: #fff;
+    transition: .4s;
+    margin-top: 5px;
+}
+input[type=submit]:hover{
+    background-color: #F81D44;
+}

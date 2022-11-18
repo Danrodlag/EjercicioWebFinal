@@ -1,0 +1,139 @@
+
+/* Este es el css principal, que a parte de llevar la información del index, lleva aquella que es necesaria para los demás css */
+/* Primero insertaremos los tipos de letras */
+
+@font-face {
+    font-family: "Raleway";
+    src: url("fonts/Raleway-Regular.ttf");
+}
+
+@font-face {
+    font-family: "MontSerrat Black";
+    src: url("fonts/Montserrat-Black.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat Regular";
+    src: url("fonts/Montserrat-Regular.ttf");
+}
+
+/* Vamos a poner esta etiqueta para que en el html no haya un borde blanco y ocupe el tamaño máximo*/
+/* A parte añadimos la letra por defecto de todo */
+body{
+    margin: 0px;
+    width: 100%;
+    font-family:  "Montserrat Regular", sans-serif;
+}
+
+/* Css del navegador en general, incluyendo el botón */
+nav{
+    background-color:  #24252A;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 15px;
+    border: none;
+    font-family: "Raleway",sans-serif;
+    text-align: center;
+}
+nav a{
+    color: #ffffff;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Botón se separarán con un margin left, para que no queden pegados */
+#suscribete{
+    background-color:  #F81D44;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    padding: 10px;
+    transition: all .3s ease .0s;
+    font-size: large;
+    margin-left: 19%;
+}
+#suscribete:hover{
+    transform: scale(1.2);
+}
+
+/* Cosas index */
+
+/* Propiedades del main para que haga las columnas y quede centrado */
+.mainin{
+    margin-left: 16%;
+    margin-right: 13%;
+    display: flex;
+    flex: row;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+/* Esta va a ser la configuración por defecto de los párrafos de la web */
+p{
+    font-size: inherit;
+    text-align: justify;
+    font-family: "Montserrat Regular", sans-serif;
+}
+
+/* Una clase para añadir el ancho de cada columna */
+.sectionind{
+    width: 450px;
+}
+
+/* Propiedades por defecto de los títulos h1 */
+h1{
+    font-family: "MontSerrat Black", sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Css del enlace Top3, le quitamos la decoración por defecto */
+#top3{
+    text-decoration: none;
+    color:#F81D44
+}
+
+/* Medidas y centrado de la imagen principal */
+#tododiscos{
+    margin-top: 10px;
+    margin-left: 16%;
+    width: 950px;
+}
+
+/* Imágenes a parte de la principal del título */
+#index-img{
+    max-width: 450px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 0px;
+    margin-left: 0px;
+    transition: all .1s ease;
+}
+/* Hacer que las imágenes crezcan y se cambie por una lupa el puntero del ratón */
+#index-img:hover{
+    transform: scale(1.05);
+    cursor: zoom-in;
+}
+
+/* Footer para toda la web */
+footer{
+    background-color:  #24252A;
+    font-family: 'Raleway', sans-serif;
+    padding: 10px;
+    padding-right: 15px;
+    text-align: center;
+    border: none;
+}
+
+footer a{
+    color: #ffffff;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+

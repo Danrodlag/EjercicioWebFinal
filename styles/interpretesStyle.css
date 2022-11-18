@@ -1,0 +1,50 @@
+/* Aquí ya cosas únicas de intérpretes*/
+
+/* Caja principal de cada intérprete */
+.sectionint{
+    max-width: 90%;
+    box-shadow: 4px 4px 4px 4px #c9c9c9;
+    border-radius: 15px;
+    margin: 3%;
+    padding: 1%;
+    text-align: center;
+}
+
+/* Flex para enseñar la imágen y el párrafo */
+.cajaflex{
+    display: flex;
+    gap: 5%;
+    align-items: center;
+}
+
+/* Propiedades del título y la imágen*/
+.titulo{
+    width: 100%;
+}
+.imgint{
+    width: 40%;
+}
+
+/* Propiedades de las imágenes de los discos */
+.imgdisc{
+    width: 20%;
+    max-width: 250px;
+    max-height: 300px;
+}
+
+/* Párrafo intérprete */
+.pint{
+    max-width: 55%;
+}
+
+/* Flex para los discos, para que se enseñen y centren de forma ordenada */
+.discbox{
+    display: flex;
+    width: 80%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px auto;
+    position: relative;
+}
