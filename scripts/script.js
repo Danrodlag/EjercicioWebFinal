@@ -17,3 +17,7 @@ console.log("Funciono");
 const TIEMPO_INTERVALO_MILESIMAS_SEG = 5000;
 intervalo = setInterval(pasar_foto, TIEMPO_INTERVALO_MILESIMAS_SEG);
 
+function pediremosnlaces(){
+    setTimeout()
+};
+
