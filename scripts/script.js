@@ -20,11 +20,11 @@ function pedirenlace(){
     var enlaces = document.getElementsByTagName("a")
     var pregunta = window.prompt("¿Cuántos enlaces crees que tiene esta página?")
     if (pregunta == enlaces.length){
-        window.alert("Muy bien, has acertado tiene ${enlaces.length} enlace");
-    } else if (pregunta == false){
+        window.alert(`Muy bien, has acertado tiene ${enlaces.length} enlaces`);
+    } else if (pregunta == null){
         window.alert("Vale, ya lo pillo. No te apetece contestar... Otra vez será...")
     } else {
-        window.alert("Ups... me temo que te has equivocado hay ${enlaces.length} enlaces. Más suerte la próxima vez...")
+        window.alert(`Ups... me temo que te has equivocado hay ${enlaces.length} enlaces. Más suerte la próxima vez...`)
     }
 };
 
