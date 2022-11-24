@@ -34,23 +34,22 @@ h1, h2, h3{
     text-align: center;
 }
 
-/* Párrafo con un límite de escritura y cosas añadidas para que en un futuro se pueda ampliar al pulsar leer más*/
-p{
+/* Box */
+
+.p {
     width: 300px;
     text-align: justify;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 10;
-    line-clamp: 10;
-    overflow: hidden;
 }
-.p:hover{
-    display: block;
+.total{
+    display: none;
 }
-
-/* Color y alineación de Leer más */
-.leermas{
-    margin-left: 40%;
+.leermas {
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
     width: 100%;
     color: #0098A2;
     text-align: center;

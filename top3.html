@@ -10,6 +10,10 @@
         <link rel="stylesheet" type="text/css" href="styles/style.css">
         <link rel="stylesheet" type="text/css" href="styles/interpretesStyle.css">
         <link rel="stylesheet" type="text/css" href="styles/top3style.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+        <script src="scripts/top3script.js" defer></script>
     </head>
     <body>
         <div>
@@ -39,34 +43,50 @@
                 <!-- Títulos y párrafo -->
                 <h2>Unplugged</h2>
                 <h3>Eric Clapton</h3>
-                <p>"Eric Clapton was 'unplugged' in more ways than one at that performance. There, in front of a large studio audience - and later an enormous MTV and record-buying audience - an artist who is know to be very shy dealt with the most painful experience anyone could ever imagine - the tragic loss of his son, Conor."
-                </p>
-
+                <div class="box">
+                    <p class="p"><span class="resumen">"Eric Clapton was 'unplugged' in more ways than one at that performance. 
+                        There, in front of a large studio audience - and later an enormous MTV and record-buying </span><span class="total" id="total1">
+                        audience - an artist who is know to be very shy dealt with the most painful experience
+                        anyone could ever imagine - the tragic loss of his son, Conor."</span>
+                    </p>
+                </div>
                 <!-- Link leer más que por ahora no hace nada -->
-                <a href="#Leer más" class="leermas">Leer más...</a>
+                <p id="1" class="leermas">Leer más...</p>
             </article>
 
             <article class="topbox">
                 <img src="img/top3/laura_pausini_sim.jpg" alt="Laura Pausini jpg" class="imgtop">
                 <h2>Simili</h2>
                 <h3>Laura Pausini</h3>
-                <p>La copertina dell'album ritrae Laura Pausini distesa in un prato; nel retrocopertina quattro ragazzi distesi anch'essi nell'erba ognuno con delle caratteristiche diverse: chi ha dei tatuaggi, chi ha gli occhi a mandorla, chi è scuro di pelle; il messaggio vuole indicare che in fondo siamo tutti simili.
-                </p>
+                <div class="box">
+                    <p class="p"><span class="resumen">La copertina dell'album ritrae Laura Pausini distesa in un prato; nel 
+                        retrocopertina quattro ragazzi distesi anch'essi nell'erba ognuno con delle 
+                        caratteristiche diverse: chi ha dei</span><span class="total" id="total2">tatuaggi, chi ha gli occhi a mandorla, chi è 
+                        scuro di pelle; il messaggio vuole indicare che in fondo siamo tutti simili.</span>
+                    </p>
+                </div>
 
                 <!-- Este br hace que estén alineados -->
                 <br>
 
-                <a href="#Leer más" class="leermas">Leer más...</a>
+                <p class="leermas" id="2">Leer más...</p>
             </article>
 
             <article class="topbox">
                 <img src="img/top3/stones_cc.jpg" alt="Rolling Stones jpg" class="imgtop">
                 <h2>The Complete Collection</h2>
                 <h3>The Rolling Stones</h3>
-                <p>The three-disc box set Singles Collection: The London Years contains every single the Rolling Stones released during the '60s, including both the A- and B-sides. It is the first Stones compilation that tries to be comprehensive and logical -- for all their attributes, the two Hot Rocks sets and the two Big Hits collections didn't present the singles in chronological order.
-                </p>
+                <div class="box">
+                    <p class="p"><span class="resumen">The three-disc box set Singles Collection: The London Years contains 
+                        every single the Rolling Stones released during the '60s, including both the A- 
+                        and B-sides. It</span><span class="total" id="total3">is the first Stones compilation that tries to be comprehensive and 
+                        logical -- for all their attributes, the two Hot Rocks sets and the two Big Hits 
+                        collections didn't present the singles in chronological order.
+                    </span>
+                    </p>
+                </div>
 
-                <a href="#Leer más" class="leermas">Leer más...</a>
+                <p class="leermas" id="3">Leer más...</p>
             </article>
         </section>
 
