@@ -1,3 +1,6 @@
 #cajatabla{
-    margin-left: 19%;
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
