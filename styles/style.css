@@ -23,10 +23,19 @@ body{
     margin: 0px;
     width: 100%;
     font-family:  "Montserrat Regular", sans-serif;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+div{
+    width: 100%;
+    text-align: center;
 }
 
 /* Css del navegador en general, incluyendo el botón */
 nav{
+    width: 100%;
     background-color:  #24252A;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -53,7 +62,6 @@ nav a{
     padding: 10px;
     transition: all .3s ease .0s;
     font-size: large;
-    margin-left: 19%;
 }
 #suscribete:hover{
     transform: scale(1.2);
@@ -63,11 +71,11 @@ nav a{
 
 /* Propiedades del main para que haga las columnas y quede centrado */
 .mainin{
-    margin-left: 16%;
-    margin-right: 13%;
     display: flex;
     flex: row;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     gap: 50px;
 }
 
@@ -100,7 +108,6 @@ h1{
 /* Medidas y centrado de la imagen principal */
 #tododiscos{
     margin-top: 10px;
-    margin-left: 16%;
     width: 950px;
 }
 
@@ -121,6 +128,7 @@ h1{
 
 /* Footer para toda la web */
 footer{
+    width: 100%;
     background-color:  #24252A;
     font-family: 'Raleway', sans-serif;
     padding: 10px;

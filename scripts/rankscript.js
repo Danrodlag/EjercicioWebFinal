@@ -1,5 +1,9 @@
+
+/* Función que crea la tabla con los datos */
 $(function () {
     "use strict";
+
+    /* Aqui escribimos el id donde está la tabla, y con la librería jqGrid, añadimos la tabla con las columnas y los datos */ 
     $("#tablarank").jqGrid({
         colModel: [
             { name: "Intérprete" },
@@ -19,6 +23,7 @@ $(function () {
             { id: 70, Intérprete: "Pedro Guerra", Canción: "Niños", NºDescargas: "202347", Precio: "1.15", Versionado: false, ÚltDescarga: "23-Sep-2021"  },
             { id: 80, Intérprete: "Rosalía", Canción: "Me quedo contigo", NºDescargas: "117906", Precio: "1.20", Versionado: true, ÚltDescarga: "31-Jul-2021"  }
         ],
+        /*  Le pasamos pager y rownum para que haga páginas con un máximo de 5 filas por página */
         pager: true ,
         rowNum: 5,
     });
