@@ -7,7 +7,7 @@ const outputh = document.querySelector("#horas");
 const countDown = () => {
 
     /* Cogemos las horas y días de referencia y las actuales */
-    const countDownDate = new Date("2022-11-30T23:59").getTime();
+    const countDownDate = new Date("2022-11-30T00:00").getTime();
     const now = new Date().getTime();
 
     /* Calculamos la diferencia entre un día y otro */
@@ -30,14 +30,16 @@ const countDown = () => {
         (distance % (1000 * 60)) / 1000
     );
 
-    /* Le pasamos los datos al html */
-    output.innerText = `${dd} Día`;
-    outputh.innerText = `${hh}h ${mm}' ${ss}"`;
+    
 
     /* Decimos que si la distancia es menor o igual a 0 que se ponga un espacio vacío*/
     if(distance <= 0) {
         output.innerText = "";
         outputh.innerText = "";
+    } else {
+        /* Le pasamos los datos al html */
+        output.innerText = `${dd} Día`;
+        outputh.innerText = `${hh}h ${mm}' ${ss}"`;
     }
 };
 

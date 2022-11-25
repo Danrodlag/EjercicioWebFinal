@@ -14,7 +14,7 @@
         <link rel="stylesheet" type="text/css" href="styles/formstyle.css">
 
         <script>
-            addEventListener("change", getvalue)
+            addEventListener("input", getvalue)
 
             function getvalue(){
                 var value = document.getElementById("descargas").value;
@@ -39,10 +39,13 @@
             <button id="suscribete"><a href="formulario.html">¡Suscríbete!</a></button>
         </nav>
 
+
         <!--Vamos con el main -->
         <main>
+
             <!-- Título Principal -->
             <h1>¡Música gratis durante 1 año!</h1>
+
             <!-- Parrafo de descripción -->
             <p>Te gustaría escuchar más música pero no quieres gastarte el dinero?
                 ¡Ya no tienes excusa! Gana un año de discos <b>GRATIS</b>
@@ -55,9 +58,12 @@
 
             <!-- Aquí irán los futuros temporizadores, vamos preparandolos para solo añadir el contenido después -->
             <section class="cajatemps">
+
                 <article class="temporizadores" id="dias">
+
                 </article>
                 <article class="temporizadores" id="horas">
+
                 </article>
             </section>
 

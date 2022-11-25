@@ -32,7 +32,7 @@ h2{
     background-color: #F81D44;
     margin: 15px;
     color:#ffffff;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat Regular';
     font-size: 1.5rem;
 
 }
@@ -62,6 +62,7 @@ h2{
 /* Estilo primeros campos */
 .primeros{
     align-self: center;
+    text-align: justify;
     border-radius: 13px;
     margin-bottom: 5px;
     padding: 10px;
@@ -72,6 +73,7 @@ h2{
 
 /* Estilo de los siguientes campos */
 .resto{
+    text-align: justify;
     align-self: center;
     border: 1px solid #c9c9c9;
     border-left: none;
@@ -115,6 +117,11 @@ select{
     font-family: sans-serif;
     color: gray;
     font-size: .7rem;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 5px;
 }
 
 /* Estilo del botón Enviar, con su propia transición */

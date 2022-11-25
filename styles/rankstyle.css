@@ -1,6 +1,9 @@
+/* Código css a parte del que cogemos de internet */
+
 #cajatabla{
     width: 100%;
     display:flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-bottom: 2%;
 }
